@@ -14,7 +14,7 @@ function Perfil() {
                     </Image>
                 </View>
                 <View style={estiloPerfil.texto}>
-                    <Text style={estiloPerfil.textoDentro}>Nome: Raíssa Benni de Laia</Text>
+                    <Text style={estiloPerfil.textoDentro}>Nome: Raíssa Benini de Laia</Text>
                 </View>
                 <View style={estiloPerfil.texto}>
                     <Text style={estiloPerfil.textoDentro}>Turma: 2ºDSB</Text>

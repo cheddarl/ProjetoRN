@@ -1,14 +1,24 @@
 import React from 'react';
-import { Text, View, Image, Button, Alert } from 'react-native';
+import { Text, View, Image, Button, TouchableOpacity } from 'react-native';
 import estiloPrincipal from './estiloPrincipal';
 import { Entypo } from '@expo/vector-icons';
+import {
+  createDrawerNavigator,
+  DrawerContentScrollView,
+  DrawerItemList,
+  DrawerItem,
+} from '@react-navigation/drawer';
 
-export default function Principal() {
+function Principal({ navigation }) {
   return (
     <View style={estiloPrincipal.container}>
+       
         <View style={estiloPrincipal.menu}>
-            <Entypo name="menu" size={54} color="white" />
-        </View>
+            <TouchableOpacity onPress={() => navigation.openDrawer()}>
+                <Entypo name="menu" size={54} color="white" />
+            </TouchableOpacity>
+         </View>
+         
         <Image 
             style={estiloPrincipal.imagem}
             source={require('../../assets/log.png')}>
@@ -20,4 +30,4 @@ export default function Principal() {
     </View>
   );
 } 
-
+export default Principal;
