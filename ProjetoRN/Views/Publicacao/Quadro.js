@@ -1,31 +1,37 @@
 import React from 'react';
-import { Text, View, Image } from 'react-native';
+import { Text, View, Image, TouchableOpacity } from 'react-native';
 import estiloPublicacao from './estiloPublicacao';
 import { AntDesign } from '@expo/vector-icons'; 
-import { MaterialCommunityIcons } from '@expo/vector-icons'; 
+import { MaterialCommunityIcons } from '@expo/vector-icons';
+ 
 
-function Quadro() {
+function Quadro(titulo, img) {
+    
   return (
-        
         <View style={estiloPublicacao.opcoes}>
                 <View style={estiloPublicacao.iconss}>
-                    <AntDesign name="heart" size={34} color="white" />
+                    <TouchableOpacity>
+                        <AntDesign name="heart" size={34} color="white" />
+                    </TouchableOpacity>
                     <View style={estiloPublicacao.iconss2}>
-                        <MaterialCommunityIcons name="lead-pencil" size={34} color="white" />
-                    </View>
-                </View>
+                        <TouchableOpacity>
+                            <MaterialCommunityIcons name="lead-pencil" size={34} color="white" />
+                        </TouchableOpacity>
+                    </View> 
+                </View> 
 
                 <View style={estiloPublicacao.img}> 
                         <Image 
-                            style={estiloPublicacao.public}
-                            source={require('../../assets/brig.jpg')}>
+                            style={estiloPublicacao.public} 
+                            source={require('./receitFotos/' + img)}>
                         </Image>
                 </View>
                 <View style={estiloPublicacao.posicao}>
-                    <Text style={estiloPublicacao.titulo}>Brigadeiro</Text>
+                    <Text style={estiloPublicacao.titulo}>{titulo}</Text>
                 </View>
         </View>
         
   );
 } 
 export default Quadro;
+// require('../../assets/brig.jpg')

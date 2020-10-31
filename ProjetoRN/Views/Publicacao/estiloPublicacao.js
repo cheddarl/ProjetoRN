@@ -5,7 +5,7 @@ const estiloPublicacao = StyleSheet.create({
     flex: 1, 
     backgroundColor: '#F08080',
     alignItems: 'center',
-    paddingTop: '1000', 
+    paddingTop: '5%', 
   },
   public: {
       alignItems: 'center',
@@ -49,7 +49,30 @@ const estiloPublicacao = StyleSheet.create({
     justifyContent: 'center',
   },
   espaco: {
-    height: 15,
+    height: 22,
+  },
+  txt: {
+    Color: '#FFFFFF',
+    fontSize: 16,
+    fontFamily: 'Comic Sans MS',
+
+  },
+  tit: {
+    fontSize: 50,
+    fontFamily: 'Comic Sans MS',
+    color: '#FFFFFF',
+    fontWeight: 'bold',
+  },
+  subtit: {
+    fontSize: 30,
+    fontFamily: 'Comic Sans MS',
+    color: '#FFFFFF',
+    fontWeight: 'bold',
+  },
+  viewSubtit: {
+    alignSelf: 'flex-start',
+    paddingLeft: 17,
+    paddingTop: 65,
   },
 });
 
