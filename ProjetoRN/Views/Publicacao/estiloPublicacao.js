@@ -74,6 +74,31 @@ const estiloPublicacao = StyleSheet.create({
     paddingLeft: 17,
     paddingTop: 65,
   },
+  tituloPubli: {
+    fontSize: 65,
+    fontFamily: 'Comic Sans MS',
+    alignSelf: 'center',
+    color: '#F08080',
+    fontWeight: 'bold',
+  },
+  bordaTit: {
+    borderWidth: 2,
+    borderStyle: 'dashed',
+    backgroundColor: '#FFB6C1',
+    borderColor: '#FFB6C1',
+    borderRadius: 25,
+    bottom: 30,
+  },
+  borda: { 
+    borderStyle: 'dashed',
+    borderWidth: 2,
+    borderRadius: 40,
+    height: '94%',
+    width: '94%',
+    borderColor: '#FFB6C1',
+   // backgroundColor: 'transparent',
+    alignItems: 'center',
+  },
 });
 
 export default estiloPublicacao;

@@ -1,9 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Text, View, Image, TouchableOpacity } from 'react-native';
 import estiloPublicacao from './estiloPublicacao';
 import { AntDesign } from '@expo/vector-icons'; 
 import { MaterialCommunityIcons } from '@expo/vector-icons';
- 
+import Receitas from './Receitas';
 
 function Quadro(titulo, img) {
     
@@ -11,7 +11,7 @@ function Quadro(titulo, img) {
         <View style={estiloPublicacao.opcoes}>
                 <View style={estiloPublicacao.iconss}>
                     <TouchableOpacity>
-                        <AntDesign name="heart" size={34} color="white" />
+                        <AntDesign name="heart" size={34} color='white' />
                     </TouchableOpacity>
                     <View style={estiloPublicacao.iconss2}>
                         <TouchableOpacity>

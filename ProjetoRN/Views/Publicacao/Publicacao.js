@@ -7,12 +7,17 @@ import Quadro from './Quadro';
 
 function Publicacao() {
   return (
-      <ScrollView>
+      <ScrollView showsVerticalScrollIndicator ={false}>
         <View style={estiloPublicacao.container}>
-        {Quadro('Brigadeiro', 'brig.jpg')} 
-        <View style={estiloPublicacao.espaco}></View>
-        {Quadro('Coxinha', 'coxinha.jpg')} 
-        <View style={estiloPublicacao.espaco}></View>
+            <br />
+            <View style={estiloPublicacao.bordaTit}>
+                <Text style={estiloPublicacao.tituloPubli}> Publicações </Text>
+            </View>
+            <View style={estiloPublicacao.espaco}></View>
+                {Quadro('Brigadeiro', 'brig.jpg')} 
+            <View style={estiloPublicacao.espaco}></View>
+                {Quadro('Coxinha', 'coxinha.jpg')} 
+            <View style={estiloPublicacao.espaco}></View>
         </View>
       </ScrollView>
   );

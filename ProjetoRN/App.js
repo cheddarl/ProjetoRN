@@ -10,6 +10,7 @@ import { Octicons } from '@expo/vector-icons';
 import { Ionicons } from '@expo/vector-icons';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import Receitas from './Views/Publicacao/Receitas';
+import Aluno from './Views/Perfil/Aluno';
 
 const Tab = createBottomTabNavigator();
 

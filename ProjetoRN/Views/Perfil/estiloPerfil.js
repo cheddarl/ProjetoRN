@@ -2,12 +2,12 @@ import { StyleSheet } from 'react-native';
 
 const estiloPrincipal = StyleSheet.create({
   container: {
-    flex: 1, 
+   // flex: 1, 
     backgroundColor: '#F08080',
     alignItems: 'center',
     justifyContent: 'center',
     paddingTop: 10,
-    height: '100%',
+    height: '110%',
     width: '100%',
   },
   foto: {
@@ -54,7 +54,32 @@ const estiloPrincipal = StyleSheet.create({
   },
   candy: {
     paddingLeft: '70%',
-    paddingTop: '30%',
+    paddingTop: 370,
+    alignSelf: 'flex-end',
+  },
+  titulo: {
+    fontSize: 65,
+    fontFamily: 'Comic Sans MS',
+    alignSelf: 'center',
+    color: '#F08080',
+    fontWeight: 'bold',
+  },
+  bordaTit: {
+    borderWidth: 2,
+    borderStyle: 'dashed',
+    backgroundColor: '#FFB6C1',
+    borderColor: '#FFB6C1',
+    borderRadius: 25,
+    bottom: 30,
+  },
+  addS: {
+    alignSelf: 'center',
+    height: 37,
+    width: 37,
+    backgroundColor: '#FFB6C1',
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: '50%',
   },
 });
 
